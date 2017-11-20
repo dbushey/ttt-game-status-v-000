@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
 #board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def won?(board)
   binding.pry
+  puts board
   WIN_COMBINATIONS.detect do |win_combination|
     board[win_combination[0]] == board[win_combination[1]] &&
     board[win_combination[1]] == board[win_combination[2]] &&
